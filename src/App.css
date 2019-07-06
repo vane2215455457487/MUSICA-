@@ -1,0 +1,23 @@
+.App {
+  text-align: center;
+}
+
+.contenedor{
+  background-color: deeppink;
+}
+
+.listadolocalidad{
+  background-color: brown;
+}
+
+
+.climadetalle{
+  background-color: rgb(85, 85, 216);
+}
+
+.climaLocalidad{
+  background-color: aliceblue;
+  font-size:14px;
+	color:#087DFF;
+	font-family: 'Times New Roman', Times, serif
+}
