@@ -2,17 +2,27 @@ import React, {Component} from "react";
 
 class ListadoElemento extends Component {
 
+    clickMusica =(item) =>{
+        const {agregarAlCarrito} = this.props
+             console.log('haciendo click en la musica..',item)
+
+     if(typeof agregarAlCarrito === 'function'){
+          agregarAlCarrito(item);
+}
+    }
 render(){
     const{contactos}=this.props;
     return(
     <div>
-        <div>Musica</div>
+       
         <div>
-            {contactos.map((item)=>{
+            {contactos.map((item,index)=>{
              return(
-                 <div key={item.id}>
-                     {item.autor}
+                 <div onClick={()=>{this.clickMusica(item)}} key={index}>
+                     {item.autor} - {item.precio}
                  </div>
+
+
              )
 
              
